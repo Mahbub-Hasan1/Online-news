@@ -1,0 +1,24 @@
+.nav-logo-div{
+    height: 150px;
+    background-color: gray;
+}
+.nav-logo-div img{
+    margin: 0px 20px 0px 40px;
+}
+.navbar{
+    padding: 0px 20px 0px 20px;
+}
+.nav-item{
+    padding: 0px 8px 0px 8px;
+}
+.nav-item:hover{
+    color: #fff;
+    background-color: #6432F9;
+}
+.nav-item a{
+    color: black;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    color: #fff;
+}

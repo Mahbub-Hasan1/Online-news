@@ -1,0 +1,21 @@
+/* .events-div{
+
+} */
+.events-div h2{
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    font-weight: bold;
+}
+.card-style{
+    transition: .5s;
+}
+.card-style:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.event-card{
+    border-radius: 10px;
+}
+.event-card-img{
+    border-radius: 10px 10px 0px 0px;
+}
