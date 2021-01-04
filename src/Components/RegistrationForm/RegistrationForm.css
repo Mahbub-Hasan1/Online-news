@@ -1,0 +1,18 @@
+.registration-form{
+    margin-top: 20px;
+}
+td, th{
+    border: 1px solid #dddddd
+}
+.registration-form{
+    margin: 0px;
+}
+.input-title{
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }

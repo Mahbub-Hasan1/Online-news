@@ -1,27 +1,96 @@
-.nav-logo{
-    width: 50%;
+.nav-logo {
+    width: 45%;
 }
-.nav-logo-div{
+
+.nav-logo-div {
     height: 150px;
     background-color: #563413;
 }
-.nav-logo-div img{
+
+.nav-logo-div img {
     margin: 0px 20px 0px 40px;
 }
-.navbar{
-    padding: 0px 20px 0px 20px;
+
+.navbar {
+    padding: 0px 0px 0px 20px;
 }
-.nav-item{
+
+.nav-item {
     padding: 0px 8px 0px 8px;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     color: #fff;
-    background-color: #6432F9;
+    background-color:#3e8e41;
 }
-.nav-item a{
+
+.nav-item a {
     color: black;
     font-weight: bold;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color:#6432F9}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover{
+    background-color: #3e8e41;
+  }
+
+@media screen and (max-width: 767px) {
+    .nav-logo {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .nav-logo {
+        width: 80%;
+    }
+    .nav-logo-div {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .nav-logo {
+        width: 75%;
+    }
+    .nav-logo-div {
+        height: 90px;
+    }
+    .nav-logo-div img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    .nav-logo {
+        width: 85%;
+    }
+    .nav-logo-div {
+        height: 70px;
+    }
 }

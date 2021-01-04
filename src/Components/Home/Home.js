@@ -11,7 +11,7 @@ import Footer from '../ShareComponents/Footer/Footer';
 const Home = () => {
     return (
         <>
-            <div className="container home-page">
+            <div className="home-page">
                 <Navbar />
                 <div className="row">
 

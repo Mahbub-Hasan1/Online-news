@@ -1,13 +1,17 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
 import './App.css';
+import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 
 function App() {
   return (
-    <div className="This-App">
+    <div className="This-App container-sm">
       <Router>
         <Switch>
+          <Route path="/registration-form">
+            <RegistrationForm />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
