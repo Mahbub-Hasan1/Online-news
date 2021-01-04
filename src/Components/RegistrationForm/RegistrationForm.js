@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../ShareComponents/Footer/Footer';
 import Navbar from '../ShareComponents/Navbar/Navbar';
 import './RegistrationForm.css';
 
@@ -143,6 +144,7 @@ const RegistrationForm = () => {
 
                 </table>
             </form>
+            <Footer />
         </>
     );
 };
