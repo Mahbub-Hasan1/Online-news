@@ -6,48 +6,54 @@ import AboutUs from './AboutUs/AboutUs';
 import OurEvents from './OurEvents/OurEvents';
 import OurMissionAndVision from './OurMissionAndVision/OurMissionAndVision';
 import Sidebar from './Sidebar/Sidebar';
+import Footer from '../ShareComponents/Footer/Footer';
 
 const Home = () => {
     return (
-        <div className="container">
-            <Navbar />
-            <div className="row">
-                
-                <div className="col-sm-9 main-content-div">
+        <>
+            <div className="container home-page">
+                <Navbar />
+                <div className="row">
 
-                    {/* Slider Section */}
-                    <div className="slider-section">
-                        <SliderSection></SliderSection>
+                    <div className="col-sm-8 main-content-div col-md-9">
+
+                        {/* Slider Section */}
+                        <div className="slider-section">
+                            <SliderSection></SliderSection>
+                        </div>
+
+                        {/* event-marquee */}
+                        <div className="event-marquee">
+                            <marquee>This text will scroll from right to left</marquee>
+                        </div>
+
+                        {/* About us part */}
+                        <AboutUs></AboutUs>
+
                     </div>
 
-                    {/* event-marquee */}
-                    <div className="event-marquee">
-                        <marquee onmouseover="stop()" onmouseout="start()">This text will scroll from right to left</marquee>
+
+                    {/* This is Sidebar part */}
+                    <div className="col-sm-4 sidebar-div col-md-3">
+                        <Sidebar />
                     </div>
 
-                    {/* About us part */}
-                    <AboutUs></AboutUs>
-                    
                 </div>
 
 
-                {/* This is Sidebar part */}
-                <div className="col-sm-3 sidebar-div">
-                    <Sidebar />
-                </div>
+
+                {/* our events */}
+                <OurEvents />
+
+                {/* Our Mission And vision */}
+                <OurMissionAndVision />
+
+                {/* This is footer part */}
+                <Footer />
 
             </div>
 
-
-
-            {/* our events */}
-            <OurEvents />
-
-            {/* Our Mission And vision */}
-            <OurMissionAndVision />
-
-
-        </div>
+        </>
     );
 };
 

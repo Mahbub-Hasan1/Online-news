@@ -36,17 +36,17 @@ const OurEvents = () => {
     return (
         <div className="events-div">
             <h2>our events...</h2>
-            <div class="row row-cols-1 row-cols-md-4">
+            <div className="row row-cols-1 row-cols-md-4">
 
                 {
                     events.map(event =>
 
-                        <div onClick={ChangeRoute} class="col mb-4 card-style">
-                            <div class="card event-card">
-                                <img src={event.img} class="card-img-top event-card-img" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">{event.title}</h5>
-                                    <p class="card-text">This is a longer....</p>
+                        <div key={event.id} onClick={ChangeRoute} className="col mb-4 card-style col-sm-6">
+                            <div className="card event-card">
+                                <img src={event.img} className="card-img-top event-card-img" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{event.title}</h5>
+                                    <p className="card-text">This is a longer....</p>
                                 </div>
                             </div>
                         </div>

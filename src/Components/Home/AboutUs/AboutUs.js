@@ -5,7 +5,7 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div className="aboutUs-div">
-            <h2>About Us</h2>
+            <h4>About Us</h4>
             <ShowMore
                 lines={7}
                 more='Show more'

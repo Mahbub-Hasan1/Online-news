@@ -1,0 +1,44 @@
+.footer{
+    background-color: #284473;
+}
+.footer-menuItems{
+    margin: 15px 10px 15px 0px;
+    padding-left: 20px;
+    border-left: 5px solid #1C7FB8;
+    font-weight: 500;
+}
+.text-bold{
+    font-weight: bold;
+    margin: 0;
+}
+.footer-icon{
+    padding: 5px;
+    margin: 5px 15px 0px 0px;
+    color: #08a8e7;
+    border: 2px solid #424E62;
+}
+.footer-Paragraph{
+    line-height: 21px;
+    color: #c3dee6;
+    font-size: 15px;
+}
+.useful-list{
+    font-size: 20px;
+    color: #d18e4b;
+    margin: 0;
+}
+.footer-useful-links{
+    color: #fff;
+    font-size: 15px;
+}
+.follow-icon{
+    border: 2px solid#d18e4b;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px;
+    margin: 5px;
+}
+.visitor-count h5{
+    margin: 15px 0px 15px 0px;
+    font-weight: 500;
+}

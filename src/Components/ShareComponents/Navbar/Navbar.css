@@ -1,6 +1,9 @@
+.nav-logo{
+    width: 50%;
+}
 .nav-logo-div{
     height: 150px;
-    background-color: gray;
+    background-color: #563413;
 }
 .nav-logo-div img{
     margin: 0px 20px 0px 40px;
