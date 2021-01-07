@@ -6,7 +6,7 @@ import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 
 function App() {
   return (
-    <div className="This-App container-sm">
+    <div className="This-App">
       <Router>
         <Switch>
           <Route path="/registration-form">

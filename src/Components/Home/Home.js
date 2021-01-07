@@ -11,7 +11,7 @@ import Footer from '../ShareComponents/Footer/Footer';
 const Home = () => {
     return (
         <>
-            <div className="home-page">
+            <div className="home-page  container-sm">
                 <Navbar />
                 <div className="row">
 
@@ -48,10 +48,11 @@ const Home = () => {
                 {/* Our Mission And vision */}
                 <OurMissionAndVision />
 
-                {/* This is footer part */}
-                <Footer />
+                
 
             </div>
+            {/* This is footer part */}
+            <Footer />
 
         </>
     );
