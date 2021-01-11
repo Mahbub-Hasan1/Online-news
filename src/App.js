@@ -3,6 +3,7 @@ import Home from "./Components/Home/Home";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
 import './App.css';
 import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
+import SampadakBani from "./Components/SampadakBani/SampadakBani";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/admin-note">
+            <SampadakBani />
           </Route>
           <Route path="*">
             <PageNotFound />

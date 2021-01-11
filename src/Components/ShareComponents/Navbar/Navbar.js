@@ -42,6 +42,12 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/">ডোনেশন</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/admin-note">সভাপতির বানী</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">লগ ইন করুন</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

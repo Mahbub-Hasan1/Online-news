@@ -10,6 +10,7 @@ import Footer from '../ShareComponents/Footer/Footer';
 import LatestUpdate from './LatestUpdates/LatestUpdate';
 import WatchVideos from './WatchVideos/WatchVideos';
 import PhotoGallery from './PhotoGallery/PhotoGallery';
+import MeetTeam from './MeetTeam/MeetTeam';
 
 const Home = () => {
     return (
@@ -50,6 +51,9 @@ const Home = () => {
 
                 {/* Latest Updates */}
                 <LatestUpdate />
+
+                {/* Meet our Team */}
+                <MeetTeam />
 
                 {/* Photo Gallery */}
                 <PhotoGallery/>

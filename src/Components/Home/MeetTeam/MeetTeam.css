@@ -1,0 +1,49 @@
+.team-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.team-title-hr{
+    width: 150px;
+    margin: 0 auto;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #f8e218;
+}
+
+.tem-text {
+    font-size: 20px;
+}
+
+.img-div img {
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.description-div {
+    background-color: #fff;
+    margin: 230px 15px 30px 15px;
+    box-shadow: 1px 1px 10px 2px #F0F0F0;
+}
+.team-icon{
+    font-size: 25px;
+    color: red;
+    margin: 10px 5px 10px 5px;
+}
+.team-name{
+    margin: 5px 0px 10px 0px;
+    font-size: 17px;
+}
+.team-hr{
+    width: 60px;
+    margin: 0 auto;
+}
+.team-skill{
+    padding: 5px 0px 10px 0px;
+}
