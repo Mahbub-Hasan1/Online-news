@@ -29,107 +29,109 @@ const usefulLinks = [
 
 const Footer = () => {
     return (
-        <div className="footer row row-cols-1 row-cols-md-4 text-white">
+        <div className="container-fluid">
+            <div className="footer row row-cols-1 row-cols-md-4  text-white">
 
-            {/* This is CONTACT INFO part */}
-            <div className="col-sm-6 col mb-4">
-                <h5 className="footer-menuItems">CONTACT INFO</h5>
-                <div className="d-flex">
-                    <div>
-                        <LocationOnIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                {/* This is CONTACT INFO part */}
+                <div className="col-sm-6 col mb-4">
+                    <h5 className="footer-menuItems">CONTACT INFO</h5>
+                    <div className="d-flex">
+                        <div>
+                            <LocationOnIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                        </div>
+                        <div>
+                            <p className="text-bold">Head Office:</p>
+                            <p className="footer-Paragraph">Plot-19, Main Road, Block-a, Section-11, Mirpur, Dhaka-1216</p>
+                        </div>
                     </div>
-                    <div>
-                        <p className="text-bold">Head Office:</p>
-                        <p className="footer-Paragraph">Plot-19, Main Road, Block-a, Section-11, Mirpur, Dhaka-1216</p>
+                    <div className="d-flex">
+                        <div>
+                            <PhoneIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                        </div>
+                        <div>
+                            <p className="text-bold">Phone:</p>
+                            <p className="footer-Paragraph">8034119, 8038549, 0987549, 0984943</p>
+                        </div>
+                    </div>
+                    <div className="d-flex">
+                        <div>
+                            <PrintIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                        </div>
+                        <div>
+                            <p className="text-bold">Fax:</p>
+                            <p className="footer-Paragraph">+88-02-8013558</p>
+                        </div>
+                    </div>
+                    <div className="d-flex">
+                        <div>
+                            <MailOutlineIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                        </div>
+                        <div>
+                            <p className="text-bold">Email:</p>
+                            <p className="footer-Paragraph text-white">heed@agni.com</p>
+                        </div>
+                    </div>
+                    <div className="d-flex">
+                        <div>
+                            <WebIcon className="footer-icon" style={{ fontSize: '40px' }} />
+                        </div>
+                        <div>
+                            <p className="text-bold">Website:</p>
+                            <p className="footer-Paragraph text-white">WWW.heed-bangladesh.com</p>
+                        </div>
                     </div>
                 </div>
-                <div className="d-flex">
-                    <div>
-                        <PhoneIcon className="footer-icon" style={{ fontSize: '40px' }} />
-                    </div>
-                    <div>
-                        <p className="text-bold">Phone:</p>
-                        <p className="footer-Paragraph">8034119, 8038549, 0987549, 0984943</p>
-                    </div>
-                </div>
-                <div className="d-flex">
-                    <div>
-                        <PrintIcon className="footer-icon" style={{ fontSize: '40px' }} />
-                    </div>
-                    <div>
-                        <p className="text-bold">Fax:</p>
-                        <p className="footer-Paragraph">+88-02-8013558</p>
-                    </div>
-                </div>
-                <div className="d-flex">
-                    <div>
-                        <MailOutlineIcon className="footer-icon" style={{ fontSize: '40px' }} />
-                    </div>
-                    <div>
-                        <p className="text-bold">Email:</p>
-                        <p className="footer-Paragraph text-white">heed@agni.com</p>
-                    </div>
-                </div>
-                <div className="d-flex">
-                    <div>
-                        <WebIcon className="footer-icon" style={{ fontSize: '40px' }} />
-                    </div>
-                    <div>
-                        <p className="text-bold">Website:</p>
-                        <p className="footer-Paragraph text-white">WWW.heed-bangladesh.com</p>
-                    </div>
-                </div>
-            </div>
 
-            {/* This is USEFUL LINKS Part */}
-            <div className="col-sm-6 col mb-4">
-                <h5 className="footer-menuItems">USEFUL LINKS</h5>
-                <div>
-                    <ul>
-                        {
-                            usefulLinks.map(link =>
-                                <li key={link.id} className="useful-list">
-                                    <Link
-                                        className="footer-useful-links"
-                                        to={`${link.link ? link.link : '/'}`}>
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            )
-                        }
-                    </ul>
+                {/* This is USEFUL LINKS Part */}
+                <div className="col-sm-6 col mb-4">
+                    <h5 className="footer-menuItems">USEFUL LINKS</h5>
+                    <div>
+                        <ul>
+                            {
+                                usefulLinks.map(link =>
+                                    <li key={link.id} className="useful-list">
+                                        <Link
+                                            className="footer-useful-links"
+                                            to={`${link.link ? link.link : '/'}`}>
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                )
+                            }
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            {/*  This is FOLLOW US Part */}
-            <div className="col-sm-6 col mb-4">
-                <h5 className="footer-menuItems">FOLLOW US</h5>
-                <Link to="/">
-                    <FacebookIcon className="follow-icon" style={{ fontSize: '40px' }} />
-                </Link>
-                <Link to="/">
-                    <YouTubeIcon className="follow-icon" style={{ fontSize: '40px' }} />
-                </Link>
-                <Link to="/">
-                    <LinkedInIcon className="follow-icon" style={{ fontSize: '40px' }} />
-                </Link>
-                <Link to="/">
-                    <TwitterIcon className="follow-icon" style={{ fontSize: '40px' }} />
-                </Link>
-                <Link to="/">
-                    <InstagramIcon className="follow-icon" style={{ fontSize: '40px' }} />
-                </Link>
-            </div>
+                {/*  This is FOLLOW US Part */}
+                <div className="col-sm-6 col mb-4">
+                    <h5 className="footer-menuItems">FOLLOW US</h5>
+                    <Link to="/">
+                        <FacebookIcon className="follow-icon" style={{ fontSize: '40px' }} />
+                    </Link>
+                    <Link to="/">
+                        <YouTubeIcon className="follow-icon" style={{ fontSize: '40px' }} />
+                    </Link>
+                    <Link to="/">
+                        <LinkedInIcon className="follow-icon" style={{ fontSize: '40px' }} />
+                    </Link>
+                    <Link to="/">
+                        <TwitterIcon className="follow-icon" style={{ fontSize: '40px' }} />
+                    </Link>
+                    <Link to="/">
+                        <InstagramIcon className="follow-icon" style={{ fontSize: '40px' }} />
+                    </Link>
+                </div>
 
-            {/* This is Visitor counter Part */}
-            <div className="col-sm-6 col mb-4 visitor-count">
-                <h5>Visitor counter</h5>
-                <p>Today: 360</p>
-                <p>Yesterday: 649</p>
-                <p>This Week: 9400</p>
-                <p>This Month: 1350</p>
-                <p>Total: 429219</p>
-                <p>Currently Online: 91</p>
+                {/* This is Visitor counter Part */}
+                <div className="col-sm-6 col mb-4 visitor-count">
+                    <h5>Visitor counter</h5>
+                    <p>Today: 360</p>
+                    <p>Yesterday: 649</p>
+                    <p>This Week: 9400</p>
+                    <p>This Month: 1350</p>
+                    <p>Total: 429219</p>
+                    <p>Currently Online: 91</p>
+                </div>
             </div>
         </div>
     );

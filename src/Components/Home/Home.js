@@ -7,6 +7,9 @@ import OurEvents from './OurEvents/OurEvents';
 import OurMissionAndVision from './OurMissionAndVision/OurMissionAndVision';
 import Sidebar from './Sidebar/Sidebar';
 import Footer from '../ShareComponents/Footer/Footer';
+import LatestUpdate from './LatestUpdates/LatestUpdate';
+import WatchVideos from './WatchVideos/WatchVideos';
+import PhotoGallery from './PhotoGallery/PhotoGallery';
 
 const Home = () => {
     return (
@@ -44,6 +47,15 @@ const Home = () => {
 
                 {/* our events */}
                 <OurEvents />
+
+                {/* Latest Updates */}
+                <LatestUpdate />
+
+                {/* Photo Gallery */}
+                <PhotoGallery/>
+
+                {/* Watch Videos */}
+                <WatchVideos/>
 
                 {/* Our Mission And vision */}
                 <OurMissionAndVision />

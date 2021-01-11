@@ -1,11 +1,12 @@
-hr{
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+hr {
   height: 2px;
   background-color: red;
   margin: 5px 0px 5px 0px;
 }
-.This-App{
-  /* color: #fff; */
-}
-body{
+
+
+body {
   background-color: #fff;
+  font-family: 'SolaimanLipi', sans-serif;
 }

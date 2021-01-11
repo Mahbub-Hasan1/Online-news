@@ -13,8 +13,12 @@
 
 .navbar {
     padding: 0px 0px 0px 20px;
+    margin: 0 auto;
 }
 
+.navbar-nav{
+    margin: 0 auto;
+}
 .nav-item {
     padding: 0px 8px 0px 8px;
 }

@@ -6,7 +6,7 @@ import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 
 function App() {
   return (
-    <div className="This-App">
+    <div>
       <Router>
         <Switch>
           <Route path="/registration-form">
@@ -20,7 +20,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      
+
     </div>
   );
 }
