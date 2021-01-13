@@ -6,7 +6,7 @@ const Sidebar = () => {
         <>
             <div className="text-center sidebar-div">
                 <h4>President's</h4>
-                <img className="img-fluid" src="https://i.imgur.com/4BXeIV4.jpg" alt="" />
+                <img className="img-fluid" src="https://cdn.pixabay.com/photo/2020/11/01/21/45/christmas-5705046__340.jpg" alt="" />
                 <h5 className="name">Name</h5>
                 <h5 className="red-more">Read More</h5>
                 <hr />
@@ -14,7 +14,7 @@ const Sidebar = () => {
 
             <div className="text-center sidebar-div">
                 <h4>President's</h4>
-                <img className="img-fluid" src="https://i.imgur.com/4BXeIV4.jpg" alt="" />
+                <img className="img-fluid" src="https://cdn.pixabay.com/photo/2020/12/09/13/59/gifts-5817555__340.jpg" alt="" />
                 <h5 className="name">Name</h5>
                 <h5 className="red-more">Read More</h5>
                 <hr />

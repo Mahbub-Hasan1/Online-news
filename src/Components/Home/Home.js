@@ -28,7 +28,7 @@ const Home = () => {
 
                         {/* event-marquee */}
                         <div className="event-marquee">
-                            <marquee>This text will scroll from right to left</marquee>
+                            <marquee style={{color:'#fff'}}>This text will scroll from right to left</marquee>
                         </div>
 
                         {/* About us part */}

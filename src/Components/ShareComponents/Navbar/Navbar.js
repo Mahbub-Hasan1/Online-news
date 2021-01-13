@@ -37,13 +37,16 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">যোগাযোগ</Link>
+                            <Link className="nav-link" to="/contact-us">যোগাযোগ</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">ডোনেশন</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/admin-note">সভাপতির বানী</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/registration-form">রেজিস্টেশন করুন</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">লগ ইন করুন</Link>

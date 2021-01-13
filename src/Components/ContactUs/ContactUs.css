@@ -1,0 +1,47 @@
+.input-hade-line{
+    background-color: #a0c572;
+    margin: 10px;
+    padding: 5px 10px 5px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5F36B1;
+    border-radius: 5px;
+}
+.contact-Information-hade-line{
+    background-color: #55aff0;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 10px 5px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2224a3;
+    border-radius: 5px;
+}
+
+.contact-information{
+    background-color: #E3F2FD;
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bold;
+}
+.contact-information p{
+    margin-bottom: 15px;
+}
+.table-div{
+    border-radius: 5px;
+    background-color: #F1F8E9;
+    padding: 30px 0px 20px 20px;
+}
+.input-name{
+    font-weight: bold;
+    font-size: 16px;
+    width: 300px;
+}
+.input-contact{
+    width: 300px;
+    margin-right: 10px;
+}
+/* .input-icon{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+} */

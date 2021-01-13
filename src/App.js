@@ -4,6 +4,7 @@ import PageNotFound from "./Components/PageNotFound/PageNotFound";
 import './App.css';
 import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 import SampadakBani from "./Components/SampadakBani/SampadakBani";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/admin-note">
             <SampadakBani />
+          </Route>
+          <Route path="/contact-us">
+            <ContactUs />
           </Route>
           <Route path="*">
             <PageNotFound />
