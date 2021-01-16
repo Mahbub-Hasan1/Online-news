@@ -1,12 +1,20 @@
 .registration-form{
     margin-top: 20px;
 }
+table{
+    width: 100%;
+}
+.input-select{
+    width: 100%;
+}
 td, th{
     border: 1px solid #dddddd
 }
 .registration-form{
     margin: 0px;
+    /* width: 100%; */
 }
+
 .input-title{
     font-weight: bold;
     margin: 0px 0px 0px 10px;
@@ -16,3 +24,17 @@ td, th{
     border-collapse: collapse;
     width: 100%;
   }
+
+  .registrationForm td{
+      border: 1px solid black;
+      font-size: 17px;
+  }
+  .registrationForm th{
+    border: 1px solid black;
+    font-size: 17px;
+}
+
+.Bkash td{
+    border: 2px solid black;
+    
+}

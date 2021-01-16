@@ -1,0 +1,22 @@
+.registered-list {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 200%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.registered-list-thead th, .registered-list-thead td{
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    border: 5px solid #00A651;
+}
+
+.registered-list-tbody th, .registered-list-tbody td {
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid #00A651;
+}

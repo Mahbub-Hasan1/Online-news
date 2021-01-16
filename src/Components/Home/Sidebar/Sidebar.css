@@ -1,6 +1,10 @@
 .sidebar-div{
     margin-top: 5px;
 }
+.President-h4{
+    margin: 0;
+    color: #00A651;
+}
 .red-more{
     margin: 0;
 }
@@ -15,4 +19,9 @@
 }
 .name{
     margin: 0px;
+    font-weight: bold;
+}
+.president-img{
+    height: 250px;
+    background-color: red;
 }

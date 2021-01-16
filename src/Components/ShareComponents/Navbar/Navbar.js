@@ -1,6 +1,7 @@
 import React from 'react';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import Logo from '../../../images/Logo.png';
+import HomeIcon from '@material-ui/icons/Home';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
@@ -18,38 +19,45 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ">
                         <li className="nav-item active">
-                            <Link className="nav-link" to="/">হোম<span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/"><HomeIcon style={{fontSize:'25px'}} /><span className="sr-only">(current)</span></Link>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link" to="/">আমাদের সম্পর্কে</Link>
+                            <div className="dropdown-content">
+                                <Link to="/">আমাদের সম্পর্কে</Link>
+                                <Link to="/">আমাদের লক্ষ্য</Link>
+                                <Link to="/">আমাদের উদ্যেশ্য</Link>
+                                <Link to="/">আমাদের লক্ষ্য</Link>
+                                <Link to="/">গঠনতন্ত্র</Link>
+                                <Link to="/admin-note">সভাপতির বাণী</Link>
+                                <Link to="/">গঠনতন্ত্র</Link>
+                                <Link to="/">সাধারণ সম্পাদকের বাণী</Link>
+                            </div>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">কেন্দ্রীয় কমিটি</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">নিউজ</Link>
+                            <Link className="nav-link" to="/">ইভেন্ট</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">নোটিশ</Link>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <Link className="nav-link" to="/registration-form">মিডিয়া</Link>
-                            <div className="dropdown-content">
-                                <Link to="/">ছবি</Link>
-                                <Link to="/">ভিডিও</Link>
-                            </div>
+                            <Link className="nav-link" to="/registration-form">নিউজ</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contact-us">যোগাযোগ</Link>
+                            <Link className="nav-link" to="/">মিডিয়া</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">ডোনেশন</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/admin-note">সভাপতির বানী</Link>
+                            <Link className="nav-link" to="/registration-form">রেজিষ্টেশন</Link>
+                        </li>
+                        
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact-us">যোগাযোগ</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/registration-form">রেজিস্টেশন করুন</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">লগ ইন করুন</Link>
+                            <Link className="nav-link" to="/">লগিন</Link>
                         </li>
                     </ul>
                 </div>

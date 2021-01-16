@@ -63,7 +63,7 @@ const MeetTeam = () => {
                 {
                     teamData.map(team =>
 
-                        <div className="col mb-4 col-sm-6">
+                        <div key={team.id} className="col mb-4 col-sm-6">
                             <div className="img-div">
                                 <img className="img-fluid" src={team.img} alt="" />
 

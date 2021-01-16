@@ -5,17 +5,17 @@ const Sidebar = () => {
     return (
         <>
             <div className="text-center sidebar-div">
-                <h4>President's</h4>
-                <img className="img-fluid" src="https://cdn.pixabay.com/photo/2020/11/01/21/45/christmas-5705046__340.jpg" alt="" />
-                <h5 className="name">Name</h5>
+                <h4 className="President-h4">“ সভাপতি ”</h4>
+                <img className="img-fluid president-img" src="https://i.imgur.com/wsdDXFD.jpg" alt="" />
+                <h5 className="name">মোঃ সাহিদুল হক</h5>
                 <h5 className="red-more">Read More</h5>
                 <hr />
             </div>
 
             <div className="text-center sidebar-div">
-                <h4>President's</h4>
-                <img className="img-fluid" src="https://cdn.pixabay.com/photo/2020/12/09/13/59/gifts-5817555__340.jpg" alt="" />
-                <h5 className="name">Name</h5>
+                <h4 className="President-h4">“ সাধারণ সম্পাদক ”</h4>
+                <img className="img-fluid president-img" src="https://i.imgur.com/hEaIa7d.jpg" alt="" />
+                <h5 className="name">জাকির হোসেন</h5>
                 <h5 className="red-more">Read More</h5>
                 <hr />
             </div>

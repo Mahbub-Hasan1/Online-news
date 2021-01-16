@@ -5,12 +5,16 @@ import './App.css';
 import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 import SampadakBani from "./Components/SampadakBani/SampadakBani";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
     <div>
       <Router>
         <Switch>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
           <Route path="/registration-form">
             <RegistrationForm />
           </Route>

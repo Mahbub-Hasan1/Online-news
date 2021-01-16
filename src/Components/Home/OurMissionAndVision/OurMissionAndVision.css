@@ -1,0 +1,8 @@
+.ourHr{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 10px;
+    width: 20%;
+    border-radius: 50px;
+    background-color: #FDD53D;
+}

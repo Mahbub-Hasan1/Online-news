@@ -28,7 +28,7 @@ const Home = () => {
 
                         {/* event-marquee */}
                         <div className="event-marquee">
-                            <marquee style={{color:'#fff'}}>This text will scroll from right to left</marquee>
+                            <marquee style={{color:'#fff'}}>ঢাকাইয়া কেরানীগঞ্জ সমিতির পিঠা উৎসব ২০২১ |  ২২ জানুয়ারি আটিবাজার ছায়ানীড় কমিউনিটি সেন্টারে</marquee>
                         </div>
 
                         {/* About us part */}

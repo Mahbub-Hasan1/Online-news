@@ -4,16 +4,16 @@
 }
 
 .aboutUs-div h4{
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
     margin: 0;
 }
 .aboutUs-div hr{
     height: 5px;
-    width: 130px;
+    width: 170px;
     border-radius: 50px;
     background-color: #FDD53D;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-bottom: 20px;
 }
 

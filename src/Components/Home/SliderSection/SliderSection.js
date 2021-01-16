@@ -10,13 +10,13 @@ const data = [
 
 const SliderSection = () => {
     const sliderStyle = {
-        // height: '600px',
+        margin: '0px'
     }
     return (
         <div style={sliderStyle}>
             <SwiftSlider
                 data={data}
-                height={400}
+                height={410}
                 // interval={5000}
                 // dotColor="#F7345F"
                 // activeDotColor="#473CFF"
