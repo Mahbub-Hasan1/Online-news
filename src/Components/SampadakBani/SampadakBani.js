@@ -5,16 +5,19 @@ import Navbar from '../ShareComponents/Navbar/Navbar';
 import Footer from '../ShareComponents/Footer/Footer';
 
 const SampadakBani = () => {
+
     return (
         <>
             <div className="container-sm">
                 <Navbar />
                 <div className="row">
                     <div className="col-sm-8 bani-content-div col-md-9">
+
                         <div className="row">
                             <div className="col-sm bani-img-div">
                                 <img className="img-fluid" src="https://www.dhakacitycollege.edu.bd/images/geninfo/1574051920.jpg" alt="" />
                             </div>
+
                             <div className="col-sm d-flex align-items-center">
                                 <div className="bani-img-title">
                                     <h5>মোঃ সাহিদুল হক</h5>
@@ -23,6 +26,7 @@ const SampadakBani = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="sampadakBani-text-area">
                             <p>
                                 আমার তথা আমাদের সকলের প্রানের স্পন্দন সৃজনশীল অহিংস অসাম্প্রদায়িক কেরানীগঞ্জ গঠন করা আমাদের মূল লক্ষ্য । ঢাকাইয়া কেরানীগঞ্জ সমিতির ভিত্তিপ্রস্তর হবে আমাদের কেরানীগঞ্জের প্রতিটি সন্তানের হৃদয়ে অদৃশ্য সেতু বন্ধন স্থাপন করা, যে বন্ধনের মাধ্যমে এগিয়ে যাবে আমাদের শিক্ষা, সংস্কৃতি, ক্রীড়া ও ব্যক্তি জীবনের উন্নয়ন ।
@@ -30,13 +34,16 @@ const SampadakBani = () => {
                                 অসহায় দুস্থ মানুষের সেবায় ঢাকাইয়া কেরানীগঞ্জ সমিতি নিরলস ভাবে কাজ করে যাবে । সুস্থ্য সমাজ গঠনে মাদক ও অন্যায়ের বিরুদ্ধ্যে অতন্দ্র প্রহরির মত কাজ করবে ঢাকাইয়া কেরানীগঞ্জ সমিতি। সুন্দর, নিরাপদ ও আধুনিক কেরানীগঞ্জ গঠনে দল মতের উর্ধে কেরানীগঞ্জের স্বার্থে নিরলস ভাবে কাজ করাই হবে আমাদের মূল লক্ষ্য।
                             </p>
                             <h5 className="text-center">
-                            মোঃ সাহিদুল হক
-                        </h5>
+                                মোঃ সাহিদুল হক
+                            </h5>
                         </div>
+
                     </div>
+
                     <div className="col-sm-4 sidebar-div col-md-3">
                         <Sidebar />
                     </div>
+
                 </div>
 
             </div>

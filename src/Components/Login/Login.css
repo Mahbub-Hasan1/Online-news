@@ -1,4 +1,4 @@
-.login-div{
+.login-div {
     background-color: #00A651;
     margin: 0 auto;
     height: 300px;
@@ -6,16 +6,18 @@
     padding: 20px;
     border-radius: 20px;
 }
-.login-title{
+
+.login-title {
     color: #fff;
     font-weight: bold;
     margin-top: 30px;
 }
-.login-div h4{
+
+.login-div h4 {
     background-color: #fff;
     margin: 0 auto;
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 2px 2px 5px  red;
+    box-shadow: 2px 2px 5px red;
 }

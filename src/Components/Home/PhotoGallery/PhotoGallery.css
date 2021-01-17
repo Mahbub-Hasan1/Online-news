@@ -1,13 +1,15 @@
-.photo-Gallery-area{
+.photo-Gallery-area {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.photo-hade-line{
+
+.photo-hade-line {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.gallery-hr{
+
+.gallery-hr {
     margin: 0 auto;
     margin-bottom: 30px;
     height: 10px;
@@ -15,25 +17,30 @@
     border-radius: 50px;
     background-color: #FDD53D;
 }
+
 .photo-gallery {
     background: blue;
     height: 370px;
 }
+
 @media only screen and (max-width: 991px) {
     .photo-gallery {
         height: 555px;
     }
 }
+
 @media only screen and (max-width: 767px) {
     .photo-gallery {
         height: 740px;
     }
 }
+
 @media only screen and (max-width: 365px) {
     .photo-gallery {
         height: 920px;
     }
 }
+
 @media only screen and (max-width: 305px) {
     .photo-gallery {
         height: 1475px;

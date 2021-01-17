@@ -1,6 +1,7 @@
 import React from 'react';
-import Gallery from 'react-grid-gallery';
 import './PhotoGallery.css';
+import Gallery from 'react-grid-gallery';
+
 
 const IMAGES =
     [{
@@ -55,9 +56,10 @@ const IMAGES =
         thumbnailWidth: 330,
         thumbnailHeight: 212
     },
-]
+    ]
 
 const PhotoGallery = () => {
+
     return (
         <div className="photo-Gallery-area">
             <h2 className="photo-hade-line">Photo Gallery</h2>

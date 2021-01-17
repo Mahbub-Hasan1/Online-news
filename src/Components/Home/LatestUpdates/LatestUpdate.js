@@ -28,13 +28,13 @@ const updatesFakeData = [
 
 
 const LatestUpdate = () => {
-    const [updates, setUpdates] = useState(updatesFakeData)
+    const [updates] = useState(updatesFakeData)
 
     const history = useHistory();
     const ChangeRoute = () => {
         history.push('/d')
     }
-    
+
     return (
         <div className="latest-update-area">
             <p className="text-center whatUp">WHAT'S UP</p>

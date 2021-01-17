@@ -1,40 +1,44 @@
-.registration-form{
+.registration-form {
     margin-top: 20px;
 }
-table{
+
+table {
     width: 100%;
-}
-.input-select{
-    width: 100%;
-}
-td, th{
-    border: 1px solid #dddddd
-}
-.registration-form{
-    margin: 0px;
-    /* width: 100%; */
 }
 
-.input-title{
+.input-select {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd
+}
+
+.registration-form {
+    margin: 0px;
+}
+
+.input-title {
     font-weight: bold;
     margin: 0px 0px 0px 10px;
 }
+
 .table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
+}
 
-  .registrationForm td{
-      border: 1px solid black;
-      font-size: 17px;
-  }
-  .registrationForm th{
+.registrationForm td {
     border: 1px solid black;
     font-size: 17px;
 }
 
-.Bkash td{
+.registrationForm th {
+    border: 1px solid black;
+    font-size: 17px;
+}
+
+.Bkash td {
     border: 2px solid black;
-    
 }

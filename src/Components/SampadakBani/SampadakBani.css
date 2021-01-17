@@ -1,26 +1,31 @@
-.bani-content-div{
+.bani-content-div {
     background-color: #F1F8E9;
     margin-top: 10px;
     padding-top: 10px;
 }
-.bani-img-title{
+
+.bani-img-title {
     margin: 20px 0px 20px 0px;
 }
-.bani-img-title h5{
+
+.bani-img-title h5 {
     line-height: 12px;
     font-weight: bold;
 }
-.bani-img-div img{
+
+.bani-img-div img {
     border: 2px solid #004D40;
     padding: 5px;
 }
 
-.sampadakBani-text-area{
+.sampadakBani-text-area {
     margin-top: 20px;
 }
-.sampadakBani-text-area p{
+
+.sampadakBani-text-area p {
     font-size: 23px;
 }
-.sampadakBani-text-area h5{
+
+.sampadakBani-text-area h5 {
     font-weight: bold;
 }

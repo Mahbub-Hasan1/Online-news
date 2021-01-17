@@ -1,33 +1,40 @@
-.latest-update-area{
+.latest-update-area {
     margin-top: 70px;
 }
-.update-card{
+
+.update-card {
     box-shadow: 2px 2px 10px 3px grey;
 }
-.update-title{
+
+.update-title {
     font-weight: bold;
     line-height: 25px;
 }
-.continue-read{
+
+.continue-read {
     margin-bottom: 3px;
     font-size: 22px;
     color: #FDD53D;
     cursor: pointer;
 }
-.continue-read:hover{
+
+.continue-read:hover {
     color: #3dfd3d;
 }
-.whatUp{
+
+.whatUp {
     margin: 0;
     color: #FDD53D;
     font-weight: bold;
     font-size: 20px;
 }
-.latest-update{
+
+.latest-update {
     font-weight: bold;
     margin: 0;
 }
-.update-hr{
+
+.update-hr {
     margin: 0 auto;
     margin-bottom: 40px;
     height: 10px;

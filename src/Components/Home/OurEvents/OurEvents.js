@@ -27,12 +27,16 @@ const eventsFakeData = [
 ]
 
 const OurEvents = () => {
-    const [events, setEvents] = useState(eventsFakeData)
+
+    const [events] = useState(eventsFakeData)
 
     const history = useHistory();
+
     const ChangeRoute = () => {
-        history.push('/d')
+        history.push('/')
     }
+
+
     return (
         <div className="events-div">
             <h2>our events...</h2>
@@ -43,11 +47,18 @@ const OurEvents = () => {
 
                         <div key={event.id} onClick={ChangeRoute} className="col mb-4 card-style col-sm-6">
                             <div className="card event-card">
-                                <img src={event.img} className="card-img-top event-card-img" alt="..." />
+
+                                <img
+                                    src={event.img}
+                                    className="card-img-top event-card-img"
+                                    alt="..."
+                                />
+
                                 <div className="card-body">
                                     <h5 className="card-title">{event.title}</h5>
                                     <p className="card-text">This is a longer....</p>
                                 </div>
+
                             </div>
                         </div>
 

@@ -5,13 +5,17 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div className="aboutUs-div">
+
             <h4>আমাদের সম্পর্কে</h4>
+
             <hr />
+
             <ShowMore
                 lines={10}
                 more='Show more'
                 less='Show less'
             >
+
                 {
                     <p>
                         “ঢাকাইয়া কেরানীগঞ্জ সমিতি” আমার তথা আমাদের সকলের প্রানের স্পন্দন
@@ -34,7 +38,9 @@ const AboutUs = () => {
                         সুন্দর, নিরাপদ ও আধুনিক কেরানীগঞ্জ গঠনে দল মতের উর্ধে কেরানীগঞ্জের স্বার্থে নিরলস ভাবে কাজ করাই হবে আমাদের মূল লক্ষ্য।
                     </p>
                 }
+
             </ShowMore>
+            
         </div>
     );
 };

@@ -13,22 +13,25 @@ import PhotoGallery from './PhotoGallery/PhotoGallery';
 import MeetTeam from './MeetTeam/MeetTeam';
 
 const Home = () => {
+
     return (
         <>
-            <div className="home-page  container-sm">
+            <div className="container-sm">
+
                 <Navbar />
+
                 <div className="row">
 
                     <div className="col-sm-8 main-content-div col-md-9">
 
                         {/* Slider Section */}
-                        <div className="slider-section">
+                        <div>
                             <SliderSection></SliderSection>
                         </div>
 
                         {/* event-marquee */}
                         <div className="event-marquee">
-                            <marquee style={{color:'#fff'}}>ঢাকাইয়া কেরানীগঞ্জ সমিতির পিঠা উৎসব ২০২১ |  ২২ জানুয়ারি আটিবাজার ছায়ানীড় কমিউনিটি সেন্টারে</marquee>
+                            <marquee style={{ color: '#fff' }}>ঢাকাইয়া কেরানীগঞ্জ সমিতির পিঠা উৎসব ২০২১ |  ২২ জানুয়ারি আটিবাজার ছায়ানীড় কমিউনিটি সেন্টারে</marquee>
                         </div>
 
                         {/* About us part */}
@@ -38,7 +41,7 @@ const Home = () => {
 
 
                     {/* This is Sidebar part */}
-                    <div className="col-sm-4 sidebar-div col-md-3">
+                    <div className="col-sm-4 col-md-3">
                         <Sidebar />
                     </div>
 
@@ -56,15 +59,15 @@ const Home = () => {
                 <MeetTeam />
 
                 {/* Photo Gallery */}
-                <PhotoGallery/>
+                <PhotoGallery />
 
                 {/* Watch Videos */}
-                <WatchVideos/>
+                <WatchVideos />
 
                 {/* Our Mission And vision */}
                 <OurMissionAndVision />
 
-                
+
 
             </div>
             {/* This is footer part */}

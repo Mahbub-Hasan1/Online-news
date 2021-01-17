@@ -1,27 +1,28 @@
-/* .events-div{
-
-} */
-.events-div h2{
+.events-div h2 {
     text-align: center;
     margin: 20px 0px 30px 0px;
     font-weight: bold;
 }
-.card-style{
+
+.card-style {
     transition: .5s;
 }
-.card-style:hover{
+
+.card-style:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-.card-title{
+
+.card-title {
     font-size: 22px;
 }
 
-.event-card{
+.event-card {
     border-radius: 10px;
     background-color: #331808;
     color: #fff;
 }
-.event-card-img{
+
+.event-card-img {
     border-radius: 10px 10px 0px 0px;
 }

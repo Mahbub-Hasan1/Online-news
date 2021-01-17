@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ">
                         <li className="nav-item active">
-                            <Link className="nav-link" to="/"><HomeIcon style={{fontSize:'25px'}} /><span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/"><HomeIcon style={{ fontSize: '25px' }} /><span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link" to="/">আমাদের সম্পর্কে</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/registration-form">রেজিষ্টেশন</Link>
                         </li>
-                        
+
                         <li className="nav-item">
                             <Link className="nav-link" to="/contact-us">যোগাযোগ</Link>
                         </li>

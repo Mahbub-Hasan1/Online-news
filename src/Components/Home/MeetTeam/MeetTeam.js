@@ -51,7 +51,7 @@ const teamFakeData = [
 
 const MeetTeam = () => {
 
-    const [teamData, setTeamData] = useState(teamFakeData)
+    const [teamData] = useState(teamFakeData)
 
     return (
         <div>
@@ -69,17 +69,33 @@ const MeetTeam = () => {
 
                                 <div className="description-div text-center">
                                     <Link to={team.facebookLink}>
-                                        <FacebookIcon className="team-icon" style={{ fontSize: '25px' }} />
+                                        <FacebookIcon
+                                            className="team-icon"
+                                            style={{ fontSize: '25px' }}
+                                        />
                                     </Link>
+
                                     <Link to={team.twitterLink}>
-                                        <TwitterIcon className="team-icon" style={{ fontSize: '25px' }} />
+                                        <TwitterIcon
+                                            className="team-icon"
+                                            style={{ fontSize: '25px' }}
+                                        />
                                     </Link>
+
                                     <Link to={team.googleLink}>
-                                        <AlternateEmailIcon className="team-icon" style={{ fontSize: '25px' }} />
+                                        <AlternateEmailIcon
+                                            className="team-icon"
+                                            style={{ fontSize: '25px' }}
+                                        />
                                     </Link>
+
                                     <Link to={team.linkedInLink}>
-                                        <LinkedInIcon className="team-icon" style={{ fontSize: '25px' }} />
+                                        <LinkedInIcon
+                                            className="team-icon"
+                                            style={{ fontSize: '25px' }}
+                                        />
                                     </Link>
+
 
                                     <p className="team-name">{team.name}</p>
                                     <hr className="team-hr" />
