@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -14,7 +15,9 @@ const Sidebar = () => {
                 />
 
                 <h5 className="name">মোঃ সাহিদুল হক</h5>
-                <h5 className="red-more">Read More</h5>
+                <Link to="/savapati-note">
+                    <h5 className="red-more">বিস্তারিত..</h5>
+                </Link>
                 <hr />
             </div>
 
@@ -27,7 +30,11 @@ const Sidebar = () => {
                 />
 
                 <h5 className="name">জাকির হোসেন</h5>
-                <h5 className="red-more">Read More</h5>
+
+                <Link to="/sampadak-note">
+                    <h5 className="red-more">বিস্তারিত..</h5>
+                </Link>
+
                 <hr />
 
             </div>
@@ -42,7 +49,7 @@ const Sidebar = () => {
 
                 <button
                     className="sidebar-btn"
-                    style={{ background: 'green' }}
+                    style={{ background: '#00c04a' }}
                 >How to register
                 </button>
 

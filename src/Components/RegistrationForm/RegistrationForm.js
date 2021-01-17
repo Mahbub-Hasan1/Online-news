@@ -181,7 +181,7 @@ const RegistrationForm = () => {
                                 <p className="input-title">রেজিষ্টেশন ফি:</p>
                             </td>
                             <td>
-                                <p className="input-title">200 টাকা</p>                            </td>
+                                <p className="input-title">১০০ টাকা</p>                            </td>
                             <td>
                                 <p className="input-title">পেমেন্ট প্রধানের জন্য {'>'}</p>
                             </td>

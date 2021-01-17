@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import Logo from '../../../images/Logo.png';
 import HomeIcon from '@material-ui/icons/Home';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const Navbar = () => {
+    const { loggedInUser, adminData, setAdminData } = useContext(UserContext);
+
+
+    useEffect(() => {
+        fetch('http://backend.dkshomiti.com/AllAdminData')
+            .then(res => res.json())
+            .then(data => setAdminData(data))
+    }, [])
+
     return (
         <>
 
@@ -29,9 +39,9 @@ const Navbar = () => {
                                 <Link to="/">আমাদের উদ্যেশ্য</Link>
                                 <Link to="/">আমাদের লক্ষ্য</Link>
                                 <Link to="/">গঠনতন্ত্র</Link>
-                                <Link to="/admin-note">সভাপতির বাণী</Link>
+                                <Link to="/savapati-note">সভাপতির বাণী</Link>
                                 <Link to="/">গঠনতন্ত্র</Link>
-                                <Link to="/">সাধারণ সম্পাদকের বাণী</Link>
+                                <Link to="/sampadak-note">সাধারণ সম্পাদকের বাণী</Link>
                             </div>
                         </li>
                         <li className="nav-item">
@@ -59,6 +69,23 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/login">লগিন</Link>
                         </li>
+
+                        {
+                            adminData ?
+
+                                <div>
+                                    {
+                                        loggedInUser.email === adminData[0].newAdmin ?
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                                            </li>
+                                            :
+                                            ''
+                                    }
+                                </div>
+                                : ''
+                        }
+
                     </ul>
                 </div>
             </nav>

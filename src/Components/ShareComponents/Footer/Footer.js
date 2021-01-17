@@ -35,14 +35,14 @@ const Footer = () => {
 
                 {/* This is CONTACT INFO part */}
                 <div className="col-sm-6 col mb-4">
-                    <h5 className="footer-menuItems">CONTACT INFO</h5>
+                    <h5 className="footer-menuItems">যোগাযোগঃ</h5>
                     <div className="d-flex">
                         <div>
                             <LocationOnIcon className="footer-icon" style={{ fontSize: '40px' }} />
                         </div>
                         <div>
-                            <p className="text-bold">Head Office:</p>
-                            <p className="footer-Paragraph">Plot-19, Main Road, Block-a, Section-11, Mirpur, Dhaka-1216</p>
+                            <p className="text-bold">হেড অফিসঃ</p>
+                            <p className="footer-Paragraph">হোল্ডিং নং ৬৮, হাজী আঃ  বারেক রোড, পশ্চিম আগানগর, কেরানীগঞ্জ ঢাকা</p>
                         </div>
                     </div>
                     <div className="d-flex">
@@ -50,8 +50,8 @@ const Footer = () => {
                             <PhoneIcon className="footer-icon" style={{ fontSize: '40px' }} />
                         </div>
                         <div>
-                            <p className="text-bold">Phone:</p>
-                            <p className="footer-Paragraph">8034119, 8038549, 0987549, 0984943</p>
+                            <p className="text-bold">মোবাইলঃ</p>
+                            <p className="footer-Paragraph">+8801872531070</p>
                         </div>
                     </div>
                     <div className="d-flex">
@@ -60,7 +60,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <p className="text-bold">Fax:</p>
-                            <p className="footer-Paragraph">+88-02-8013558</p>
+                            <p className="footer-Paragraph">+8801872531070</p>
                         </div>
                     </div>
                     <div className="d-flex">
@@ -68,8 +68,8 @@ const Footer = () => {
                             <MailOutlineIcon className="footer-icon" style={{ fontSize: '40px' }} />
                         </div>
                         <div>
-                            <p className="text-bold">Email:</p>
-                            <p className="footer-Paragraph text-white">heed@agni.com</p>
+                            <p className="text-bold">ই-মেইলঃ</p>
+                            <p className="footer-Paragraph text-white">dkshomiti@gmail.com</p>
                         </div>
                     </div>
                     <div className="d-flex">
@@ -77,8 +77,8 @@ const Footer = () => {
                             <WebIcon className="footer-icon" style={{ fontSize: '40px' }} />
                         </div>
                         <div>
-                            <p className="text-bold">Website:</p>
-                            <p className="footer-Paragraph text-white">WWW.heed-bangladesh.com</p>
+                            <p className="text-bold">ওয়েবসাইটঃ</p>
+                            <p className="footer-Paragraph text-white">www.dkshomiti.com</p>
                         </div>
                     </div>
                 </div>

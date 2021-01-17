@@ -7,6 +7,10 @@
 .bani-img-title {
     margin: 20px 0px 20px 0px;
 }
+.bani-img-name{
+    color: #a60e00;
+    font-size: 30px;
+}
 
 .bani-img-title h5 {
     line-height: 12px;

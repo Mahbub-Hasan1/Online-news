@@ -1,40 +1,40 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../ShareComponents/Navbar/Navbar';
 import { Tabs, Tab, Panel } from '@bumaga/tabs'
 import RegisteredUserList from './RegisteredUserList/RegisteredUserList';
 import UpdateSlider from './UpdateSlider/UpdateSlider';
+import CreateNewAdmin from './CreateNewAdmin/CreateNewAdmin';
+import { UserContext } from '../../App';
+import './Dashboard.css';
 
 const Dashboard = () => {
-
-    const [adminEmail, setAdminEmail] = useState(false)
-    console.log(adminEmail)
-    const adminValidation = (e) => {
-        if (e.target.value === '@') {
-            setAdminEmail(true)
-        }
-    }
+    const { loggedInUser, adminData } = useContext(UserContext);
 
 
     return (
         <>
             <div className="container">
                 <Navbar />
-                <div className="text-center">
-                    <input type="text" onChange={adminValidation} />
-                </div>
             </div>
 
 
             <Tabs>
+
+
                 {
-                    adminEmail ?
-                        <div className="text-center">
-                            <Tab><button className="btn btn-primary">Registered User List</button></Tab>
-                            <Tab><button className="btn btn-primary">UpdateSlider</button></Tab>
-                            <Tab><button className="btn btn-primary">Tab 3</button></Tab>
+                    adminData ?
+                        <div>
+                            {
+                                loggedInUser.email === adminData[0].newAdmin ?
+                                    <div className="text-center">
+                                        <Tab><button className="btn btn-primary dashboard-btn">Registered User List</button></Tab>
+                                        <Tab><button className="btn btn-primary dashboard-btn">Update Slider</button></Tab>
+                                        <Tab><button className="btn btn-primary dashboard-btn">Create new admin</button></Tab>
+                                    </div>
+                                    : ''
+                            }
                         </div>
-                        :
-                        ''
+                        : ''
                 }
 
                 <Panel>
@@ -43,7 +43,9 @@ const Dashboard = () => {
                 <Panel>
                     <UpdateSlider />
                 </Panel>
-                <Panel><p>panel 3</p></Panel>
+                <Panel>
+                    <CreateNewAdmin />
+                </Panel>
             </Tabs>
 
         </>
