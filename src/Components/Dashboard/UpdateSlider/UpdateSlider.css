@@ -1,0 +1,25 @@
+.Preview-img-div{
+    box-shadow: 2px 2px 5px 5px rgb(202, 229, 251);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.Preview-img-div div{
+    padding: 0;
+}
+
+.img-card{
+    padding: 0;
+}
+
+.img-url-input{
+    font-size: 25px;
+}
+.update-img{
+    border-radius: 20px;
+    border: 2px solid red;
+}
+.deleteImgIcon{
+    color: red;
+    cursor: pointer;
+}

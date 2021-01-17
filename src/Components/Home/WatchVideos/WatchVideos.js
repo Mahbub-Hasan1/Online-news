@@ -25,7 +25,7 @@ const WatchVideos = () => {
                             {isTabletOrMobile ?
                                 <div className="col-md-7 container-fluid">
                                     <ReactPlayer
-                                        url="https://youtu.be/kIYb6l9eW1s"
+                                        url="https://youtu.be/tJcJoA4kseU"
                                         controls
                                         playbackRate={1}
                                         width="380px"
@@ -38,7 +38,7 @@ const WatchVideos = () => {
                                 <div className="col-md-7 container-fluid">
                                     {isLaptopOrMobail ?
                                         <ReactPlayer
-                                            url="https://youtu.be/kIYb6l9eW1s"
+                                            url="https://youtu.be/tJcJoA4kseU"
                                             controls
                                             playbackRate={1}
                                             width="540px"
@@ -46,7 +46,7 @@ const WatchVideos = () => {
                                         />
                                         :
                                         <ReactPlayer
-                                            url="https://youtu.be/kIYb6l9eW1s"
+                                            url="https://youtu.be/tJcJoA4kseU"
                                             controls
                                             playbackRate={1}
                                             width="640px"
@@ -64,7 +64,7 @@ const WatchVideos = () => {
                                     <div>
                                         {isLaptopOrMobail ?
                                             <ReactPlayer
-                                                url="https://youtu.be/kIYb6l9eW1s"
+                                                url="https://youtu.be/5EX4-aihUTg"
                                                 controls
                                                 playbackRate={1}
                                                 width="345px"
@@ -72,7 +72,7 @@ const WatchVideos = () => {
                                             />
                                             :
                                             <ReactPlayer
-                                                url="https://youtu.be/kIYb6l9eW1s"
+                                                url="https://youtu.be/5EX4-aihUTg"
                                                 controls
                                                 playbackRate={1}
                                                 width="445px"
@@ -84,7 +84,7 @@ const WatchVideos = () => {
                                     <div style={{ marginTop: '10px' }}>
                                         {isLaptopOrMobail ?
                                             <ReactPlayer
-                                                url="https://youtu.be/-RVlkAYAcRA "
+                                                url="https://youtu.be/5EX4-aihUTg "
                                                 controls
                                                 playbackRate={1}
                                                 width="345px"
@@ -92,7 +92,7 @@ const WatchVideos = () => {
                                             />
                                             :
                                             <ReactPlayer
-                                                url="https://youtu.be/-RVlkAYAcRA "
+                                                url="https://youtu.be/tJcJoA4kseU "
                                                 controls
                                                 playbackRate={1}
                                                 width="445px"

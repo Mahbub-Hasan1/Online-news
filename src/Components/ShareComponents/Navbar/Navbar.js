@@ -57,7 +57,7 @@ const Navbar = () => {
                             <Link className="nav-link" to="/contact-us">যোগাযোগ</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">লগিন</Link>
+                            <Link className="nav-link" to="/login">লগিন</Link>
                         </li>
                     </ul>
                 </div>
