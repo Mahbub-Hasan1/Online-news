@@ -42,3 +42,6 @@ td, th {
 .Bkash td {
     border: 2px solid black;
 }
+.input-width{
+    width: 98%;
+}

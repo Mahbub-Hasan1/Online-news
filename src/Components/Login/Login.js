@@ -31,10 +31,10 @@ const Login = () => {
             .signInWithPopup(provider)
             .then((result) => {
                 /** @type {firebase.auth.OAuthCredential} */
-                var credential = result.credential;
+                // var credential = result.credential;
 
                 // This gives you a Google Access Token. You can use it to access the Google API.
-                var token = credential.accessToken;
+                // var token = credential.accessToken;
                 // The signed-in user info.
                 var { displayName, email, photoURL } = result.user;
                 const signedInUser = { name: displayName, email, img: photoURL };

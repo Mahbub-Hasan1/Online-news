@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container-sm">
                 <Navbar />
             </div>
 
@@ -27,9 +27,9 @@ const Dashboard = () => {
                             {
                                 loggedInUser.email === adminData[0].newAdmin ?
                                     <div className="text-center">
-                                        <Tab><button className="btn btn-primary dashboard-btn">Registered User List</button></Tab>
-                                        <Tab><button className="btn btn-primary dashboard-btn">Update Slider</button></Tab>
-                                        <Tab><button className="btn btn-primary dashboard-btn">Create new admin</button></Tab>
+                                        <Tab><button className="btn btn-success dashboard-btn">Registered User List</button></Tab>
+                                        <Tab><button className="btn btn-success dashboard-btn">Update Slider</button></Tab>
+                                        <Tab><button className="btn btn-success dashboard-btn">Create new admin</button></Tab>
                                     </div>
                                     : ''
                             }

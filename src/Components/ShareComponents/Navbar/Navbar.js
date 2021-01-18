@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import Logo from '../../../images/Logo.png';
 import HomeIcon from '@material-ui/icons/Home';
@@ -9,12 +9,14 @@ import { UserContext } from '../../../App';
 const Navbar = () => {
     const { loggedInUser, adminData, setAdminData } = useContext(UserContext);
 
+    // console.log(adminData)
 
     useEffect(() => {
         fetch('http://backend.dkshomiti.com/AllAdminData')
             .then(res => res.json())
             .then(data => setAdminData(data))
     }, [])
+
 
     return (
         <>
@@ -75,7 +77,7 @@ const Navbar = () => {
 
                                 <div>
                                     {
-                                        loggedInUser.email === adminData[0].newAdmin ?
+                                        loggedInUser.email === adminData[0].newAdmin || loggedInUser.email === adminData[1].newAdmin || loggedInUser.email === adminData[2].newAdmin || loggedInUser.email === adminData[3].newAdmin || loggedInUser.email === adminData[4].newAdmin || loggedInUser.email === adminData[5].newAdmin ?
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
                                             </li>
@@ -85,6 +87,19 @@ const Navbar = () => {
                                 </div>
                                 : ''
                         }
+
+
+                        {/* login user name */}
+                        <li className="nav-item">
+                            {
+                                loggedInUser.name ?
+                                    <Link className="nav-link" to="">
+                                        <img style={{ width: '30px', borderRadius: '50px' }} src={loggedInUser.img} alt="img" />
+                                        {loggedInUser.name}
+                                    </Link>
+                                    : ''
+                            }
+                        </li>
 
                     </ul>
                 </div>

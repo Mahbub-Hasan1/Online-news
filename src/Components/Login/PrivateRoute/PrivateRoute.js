@@ -3,7 +3,7 @@ import { Redirect, Route } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { loggedInUser, adminData, setAdminData } = useContext(UserContext)
+    const { loggedInUser, setAdminData } = useContext(UserContext)
 
     useEffect(() => {
         fetch('http://backend.dkshomiti.com/AllAdminData')
