@@ -17,11 +17,10 @@ export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
-  const [adminData, setAdminData] = useState();
 
 
   return (
-    <UserContext.Provider value={{ loggedInUser, setLoggedInUser, adminData, setAdminData }}>
+    <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
       <div>
         <Router>
           <Switch>

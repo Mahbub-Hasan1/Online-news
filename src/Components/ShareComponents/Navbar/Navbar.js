@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import Logo from '../../../images/Logo.png';
 import HomeIcon from '@material-ui/icons/Home';
@@ -7,15 +7,20 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const Navbar = () => {
-    const { loggedInUser, adminData, setAdminData } = useContext(UserContext);
+    const { loggedInUser } = useContext(UserContext);
 
-    // console.log(adminData)
+
+    const [admin, setAdmin] = useState({});
 
     useEffect(() => {
-        fetch('http://backend.dkshomiti.com/AllAdminData')
-            .then(res => res.json())
-            .then(data => setAdminData(data))
+        fetch(`http://localhost:5050/allAdmin?newAdmin=${loggedInUser.email}`)
+            .then(response => response.json())
+            .then(data => {
+                setAdmin(data)
+            }
+            )
     }, [])
+
 
 
     return (
@@ -73,11 +78,11 @@ const Navbar = () => {
                         </li>
 
                         {
-                            adminData ?
+                            admin.length ?
 
                                 <div>
                                     {
-                                        loggedInUser.email === adminData[0].newAdmin || loggedInUser.email === adminData[1].newAdmin || loggedInUser.email === adminData[2].newAdmin || loggedInUser.email === adminData[3].newAdmin || loggedInUser.email === adminData[4].newAdmin || loggedInUser.email === adminData[5].newAdmin ?
+                                        admin.length ?
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
                                             </li>

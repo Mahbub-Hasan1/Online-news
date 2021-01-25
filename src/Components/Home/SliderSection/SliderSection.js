@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import SwiftSlider from 'react-swift-slider';
 
 const data = [
-    { 'id': '1', 'src': 'https://i.imgur.com/7ZEYCWT.png' },
-    { 'id': '2', 'src': 'https://i.imgur.com/nSBBvBz.jpg' },
-    { 'id': '3', 'src': 'https://i.imgur.com/tK4CV0n.jpg' },
-    { 'id': '4', 'src': 'https://i.imgur.com/Tg2Ysgg.jpg' },
+    { id: 1, 'src': 'https://i.imgur.com/eDaRGlH.jpg' },
+    { id: 2, 'src': 'https://i.imgur.com/nSBBvBz.jpg' },
+    { id: 3, 'src': 'https://i.imgur.com/tK4CV0n.jpg' },
+    { id: 4, 'src': 'https://i.imgur.com/Tg2Ysgg.jpg' },
 ];
 
 const SliderSection = () => {

@@ -18,10 +18,10 @@ const RegisteredUserList = () => {
                 <caption>List of users</caption>
                 <thead className="registered-list-thead">
                     <tr>
-                        
+
+                        <th scope="col">ফটো</th>
                         <th scope="col">নাম</th>
                         <th scope="col">বিকাশ নাম্বার</th>
-                        <th scope="col">ট্রানজেকশন আইডি</th>
                         <th scope="col">পিতার নাম</th>
                         <th scope="col">মাতার নাম</th>
                         <th scope="col">শিক্ষাগত যোগ্যতা</th>
@@ -43,10 +43,10 @@ const RegisteredUserList = () => {
                         RegisteredUser.map(registerData =>
 
                             <tr key={registerData._id}>
-                                
+
+                                <th> <img className="parson-img" src={registerData.img} alt=""/> </th>
                                 <th> {registerData.Name} </th>
                                 <th> {registerData.BkashNumber} </th>
-                                <th> {registerData.TransactionID} </th>
                                 <td> {registerData.FatherName} </td>
                                 <td> {registerData.MotherName} </td>
                                 <td> {registerData.EducationalQualifications} </td>

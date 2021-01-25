@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../ShareComponents/Navbar/Navbar';
 import SliderSection from './SliderSection/SliderSection';
 import './Home.css';
 import AboutUs from './AboutUs/AboutUs';
 import OurEvents from './OurEvents/OurEvents';
-import OurMissionAndVision from './OurMissionAndVision/OurMissionAndVision';
+// import OurMissionAndVision from './OurMissionAndVision/OurMissionAndVision';
 import Sidebar from './Sidebar/Sidebar';
 import Footer from '../ShareComponents/Footer/Footer';
 import LatestUpdate from './LatestUpdates/LatestUpdate';
 import WatchVideos from './WatchVideos/WatchVideos';
 import PhotoGallery from './PhotoGallery/PhotoGallery';
-import MeetTeam from './MeetTeam/MeetTeam';
+// import MeetTeam from './MeetTeam/MeetTeam';
 
 const Home = () => {
+    const [eventMarquee, setEventMarquee] = useState()
+
+    useEffect(() => {
+        fetch('http://localhost:5050/eventMarqueHomePage')
+            .then(res => res.json())
+            .then(data => setEventMarquee(data))
+    }, [])
 
     return (
         <>
@@ -31,7 +38,9 @@ const Home = () => {
 
                         {/* event-marquee */}
                         <div className="event-marquee">
-                            <marquee style={{ color: '#fff' }}>ঢাকাইয়া কেরানীগঞ্জ সমিতির পিঠা উৎসব ২০২১ |  ২২ জানুয়ারি আটিবাজার ছায়ানীড় কমিউনিটি সেন্টারে</marquee>
+                            <marquee style={{ color: '#fff' }}>
+                                {eventMarquee ? eventMarquee[0].eventMarquee : ''}
+                            </marquee>
                         </div>
 
                         {/* About us part */}
@@ -56,7 +65,7 @@ const Home = () => {
                 <LatestUpdate />
 
                 {/* Meet our Team */}
-                <MeetTeam />
+                {/* <MeetTeam /> */}
 
                 {/* Photo Gallery */}
                 <PhotoGallery />
@@ -65,7 +74,7 @@ const Home = () => {
                 <WatchVideos />
 
                 {/* Our Mission And vision */}
-                <OurMissionAndVision />
+                {/* <OurMissionAndVision /> */}
 
 
 

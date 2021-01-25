@@ -15,22 +15,22 @@ import Footer from '../ShareComponents/Footer/Footer';
 const contactInformation = [
     {
         id: 1,
-        title: 'Address: Road No. 02, Dhanmondi R/A, Dhaka. 1205, Bangladesh.',
+        title: 'Address: হোল্ডিং নং ৬৮, হাজী আঃ বারেক রোড, পশ্চিম আগানগর, কেরানীগঞ্জ ঢাকা',
         icon: <LocationOnIcon style={{ fontSize: '20px' }} />,
     },
     {
         id: 2,
-        title: 'Phone: +88-02-58610294',
+        title: 'Phone: +8801872531070',
         icon: <PhoneIcon style={{ fontSize: '20px' }} />,
     },
     {
         id: 3,
-        title: 'Fax: +88-02-58610294',
+        title: 'Fax: +8801872531070',
         icon: <SettingsCellIcon style={{ fontSize: '20px' }} />,
     },
     {
         id: 3,
-        title: 'Email: dhakacitycollege1250@gmail.com',
+        title: 'Email: dkshomiti@gmail.com',
         icon: <EmailIcon style={{ fontSize: '20px' }} />,
     },
 ]
@@ -106,7 +106,7 @@ const ContactUs = () => {
                                 )
                             }
 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.218005963696!2d90.38054411429671!3d23.739604095107115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7db3123bb%3A0x33f738dc3ddbe79f!2z4Kai4Ka-4KaV4Ka-IOCmuOCmv-Cmn-CmvyDgppXgprLgp4fgppw!5e0!3m2!1sbn!2sbd!4v1610394572384!5m2!1sbn!2sbd" style={{ width: 'auto', height: '300px' }}></iframe>
+                            <iframe title="My Daily Marathon Tracker" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.218005963696!2d90.38054411429671!3d23.739604095107115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7db3123bb%3A0x33f738dc3ddbe79f!2z4Kai4Ka-4KaV4Ka-IOCmuOCmv-Cmn-CmvyDgppXgprLgp4fgppw!5e0!3m2!1sbn!2sbd!4v1610394572384!5m2!1sbn!2sbd" style={{ width: 'auto', height: '300px' }}></iframe>
 
                         </div>
                     </dvi>

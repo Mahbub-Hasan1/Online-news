@@ -5,15 +5,15 @@ import Gallery from 'react-grid-gallery';
 
 const IMAGES =
     [{
-        src: "https://i.imgur.com/OzbRwrT.jpg",
-        thumbnail: "https://i.imgur.com/OzbRwrT.jpg",
+        src: "https://i.imgur.com/oHLxC92.jpg",
+        thumbnail: "https://i.imgur.com/oHLxC92.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
-        src: "https://i.imgur.com/uSBMIs5.jpg",
-        thumbnail: "https://i.imgur.com/uSBMIs5.jpg",
+        src: "https://i.imgur.com/52C3W7D.jpg",
+        thumbnail: "https://i.imgur.com/52C3W7D.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
@@ -21,38 +21,38 @@ const IMAGES =
     },
 
     {
-        src: "https://i.imgur.com/FF4mx43.jpg",
-        thumbnail: "https://i.imgur.com/FF4mx43.jpg",
+        src: "https://i.imgur.com/TLWeHvy.jpg",
+        thumbnail: "https://i.imgur.com/TLWeHvy.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     },
     {
-        src: "https://i.imgur.com/RxbZ44w.jpg",
-        thumbnail: "https://i.imgur.com/RxbZ44w.jpg",
+        src: "https://i.imgur.com/7s5fn5e.jpg",
+        thumbnail: "https://i.imgur.com/7s5fn5e.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     },
     {
-        src: "https://i.imgur.com/rrya10B.jpg",
-        thumbnail: "https://i.imgur.com/rrya10B.jpg",
+        src: "https://i.imgur.com/tFrlAZ2.jpg",
+        thumbnail: "https://i.imgur.com/tFrlAZ2.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     },
     {
-        src: "https://i.imgur.com/5bSmh3o.jpg",
-        thumbnail: "https://i.imgur.com/5bSmh3o.jpg",
+        src: "https://i.imgur.com/z8EmFlY.jpg",
+        thumbnail: "https://i.imgur.com/z8EmFlY.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     },
     {
-        src: "https://i.imgur.com/gROkdCa.jpg",
-        thumbnail: "https://i.imgur.com/gROkdCa.jpg",
+        src: "https://i.imgur.com/BiuIbKW.jpg",
+        thumbnail: "https://i.imgur.com/BiuIbKW.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     },
     {
-        src: "https://i.imgur.com/Yh5bdVv.jpg",
-        thumbnail: "https://i.imgur.com/Yh5bdVv.jpg",
+        src: "https://i.imgur.com/9ywiLhc.jpg",
+        thumbnail: "https://i.imgur.com/9ywiLhc.jpg",
         thumbnailWidth: 330,
         thumbnailHeight: 212
     },

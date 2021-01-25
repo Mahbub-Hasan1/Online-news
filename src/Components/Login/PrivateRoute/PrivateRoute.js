@@ -1,15 +1,20 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { loggedInUser, setAdminData } = useContext(UserContext)
+    const { loggedInUser } = useContext(UserContext)
+
+    const [admin, setAdmin] = useState({});
 
     useEffect(() => {
-        fetch('http://backend.dkshomiti.com/AllAdminData')
-            .then(res => res.json())
-            .then(data => setAdminData(data))
-    }, [])
+        fetch(`http://localhost:5050/allAdmin?newAdmin=${loggedInUser.email}`)
+            .then(response => response.json())
+            .then(data => {
+                setAdmin(data)
+            }
+            )
+    }, [admin])
 
     return (
         <Route

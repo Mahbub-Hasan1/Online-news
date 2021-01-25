@@ -1,34 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import './OurEvents.css';
+import ModalOurEventUpdate from './ModalOurEventUpdate';
 
-
-const OurEvents = () => {
+const OurEvent = () => {
     const [events, setEvents] = useState()
 
     useEffect(() => {
         fetch('http://localhost:5050/AllOurEventHomePage')
             .then(res => res.json())
             .then(data => setEvents(data))
-    }, [])
-
-
-    const history = useHistory();
-
-    const ChangeRoute = () => {
-        history.push('/')
-    }
-
+    }, [events])
 
     return (
         <div className="events-div">
-            <h2>our events...</h2>
+            <h2>update our events...</h2>
             <div className="row row-cols-1 row-cols-md-4">
 
                 {
-                  events ?  events.map(event =>
+                    events ? events.map(event =>
 
-                        <div key={event._id} onClick={ChangeRoute} className="col mb-4 card-style col-sm-6">
+                        <div key={event._id} className="col mb-4 card-style col-sm-6">
                             <div className="card event-card">
 
                                 <img
@@ -42,16 +32,20 @@ const OurEvents = () => {
                                     <p className="card-text">{event.eventDetails}</p>
                                 </div>
 
+                                <div className="text-center">
+                                    <ModalOurEventUpdate event={event}></ModalOurEventUpdate>
+                                </div>
                             </div>
+
                         </div>
 
 
                     )
-                    :''
+                        : ''
                 }
             </div>
         </div>
     );
 };
 
-export default OurEvents;
+export default OurEvent;

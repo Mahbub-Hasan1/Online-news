@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../ShareComponents/Footer/Footer';
 import Navbar from '../ShareComponents/Navbar/Navbar';
+import Axios from 'axios';
 import './RegistrationForm.css';
 import { useForm } from "react-hook-form";
 
@@ -8,23 +9,54 @@ const RegistrationForm = () => {
 
     const { register, handleSubmit } = useForm();
 
-    const onSubmit = FormData => {
+    const [uploadImgUrl, setUploadImgUrl] = useState({});
+
+    const onSubmit = fData => {
+
+        const allFromData = { ...fData, ...uploadImgUrl };
+
         fetch('http://backend.dkshomiti.com/AddRegistrationData', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify(FormData)
+            body: JSON.stringify(allFromData)
         })
             .then(response => response.json())
             .then(data => {
                 console.log(data)
                 if (data) {
-                    alert("successfully")
+                    alert("অভিনন্দন! খুব শীঘ্রই আপনার সাথে যোগাযোগ করে সদস্য কনফার্ম করা হবে।")
                 }
             })
             .catch(error => {
                 console.error(error)
             })
     };
+
+
+
+    const uploadImage = (img) => {
+        let body = new FormData()
+        body.set('key', '2f47761ebe19b643e50f810bd1150248')
+        body.append('image', img)
+
+        return Axios({
+            method: 'post',
+            url: 'https://api.imgbb.com/1/upload',
+            data: body
+        })
+    }
+
+    const upload = (e) => {
+        uploadImage(e.target.files[0])
+            .then(resp => {
+
+                const imageUrl = {}
+                imageUrl.img = resp.data.data.thumb.url;
+                setUploadImgUrl(imageUrl);
+                
+            })
+        e.preventDefault();
+    }
 
 
     return (
@@ -168,10 +200,10 @@ const RegistrationForm = () => {
                                 <input type="text" name="inheritanceName" ref={register} required placeholder="উত্তরাধিকারীর নাম;" className="registration-form" />
                             </td>
                             <td>
-                                <p className="input-title"></p>
+                                <p className="input-title">আপনার ছবি এড করুন:</p>
                             </td>
                             <td>
-                                <p className="input-title"></p>
+                                <input type="file" name="personImg" onChange={upload} required placeholder=" ছবি " className="registration-form" />
                             </td>
 
                         </tr>
@@ -186,7 +218,7 @@ const RegistrationForm = () => {
                                 <p className="input-title">পেমেন্ট প্রদানের জন্য {'>'}</p>
                             </td>
                             <td>
-                                <p className="input-title">বিকাশ নাম্বারঃ 018XXXXXXX</p>
+                                <p className="input-title">বিকাশ নাম্বারঃ  01813-807771 (personal)</p>
                             </td>
 
                         </tr>
@@ -196,13 +228,13 @@ const RegistrationForm = () => {
                                 <p className="input-title">আপনার বিকাশ নাম্বার</p>
                             </td>
                             <td>
-                                <input type="text" name="BkashNumber" ref={register} required placeholder="তোমর বিকাশ নাম্বার" className="registration-form input-width" />
+                                <input type="text" name="BkashNumber" ref={register} required placeholder="বিকাশ নাম্বার" className="registration-form input-width" />
                             </td>
                             <td>
                                 <p className="input-title">ফ্রম সাবমিট করুন</p>
                             </td>
                             <td>
-                                <input type="submit" required placeholder="সাবমিট" className="registration-form input-width btn btn-primary" style={{ background: '#fff', width: '100%', fontWeight: 'bold' }} />
+                                <input type="submit" ref={register} required placeholder="সাবমিট" className="registration-form input-width btn btn-primary" style={{ background: '#fff', width: '100%', fontWeight: 'bold' }} />
                             </td>
 
                         </tr>
