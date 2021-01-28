@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import './LatestUpdate.css';
+import ModalLatestUpdateDas from './ModalLatestUpdateDas';
 
-const LatestUpdate = () => {
+const LatestUpdateDas = () => {
     const [LatestDAta, setLatestData] = useState()
 
     useEffect(() => {
@@ -10,15 +9,6 @@ const LatestUpdate = () => {
             .then(res => res.json())
             .then(data => setLatestData(data))
     }, [])
-
-
-
-
-
-    const history = useHistory();
-    const ChangeRoute = () => {
-        history.push('/d')
-    }
 
     return (
         <div className="latest-update-area">
@@ -32,23 +22,22 @@ const LatestUpdate = () => {
 
                         <div key={update.id} className="col mb-4 col-sm-6">
                             <div className="card update-card">
-                                <img src={update.img} className="card-img-top" style={{ height: '170px' }} alt="..." />
+                                <img src={update.img} className="card-img-top" style={{height:'170px'}} alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title update-title">{update.title}</h5>
                                     <p className="card-text">September 10/by Tanzim Khan</p>
-                                    <h5 onClick={ChangeRoute} className="continue-read">Continue reading..</h5>
+                                    <ModalLatestUpdateDas update={update}></ModalLatestUpdateDas>
                                 </div>
                             </div>
                         </div>
 
 
                     )
-                        : ""
+                    :""
                 }
             </div>
         </div>
-
     );
 };
 
-export default LatestUpdate;
+export default LatestUpdateDas;

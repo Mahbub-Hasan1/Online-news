@@ -6,7 +6,7 @@ const RegisteredUserList = () => {
     const [RegisteredUser, setRegisteredUser] = useState([])
 
     useEffect(() => {
-        fetch('http://backend.dkshomiti.com/allRegistrationData')
+        fetch('http://localhost:5050/allRegistrationData')
             .then(res => res.json())
             .then(data => setRegisteredUser(data))
     }, [])

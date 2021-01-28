@@ -14,7 +14,7 @@ const UpdateSlider = () => {
     //post images data
     const onSubmit = FormData => {
 
-        fetch('http://backend.dkshomiti.com/AddSliderImages', {
+        fetch('http://localhost:5050/AddSliderImages', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(FormData)
@@ -36,7 +36,7 @@ const UpdateSlider = () => {
 
 
     useEffect((ImgData) => {
-        fetch('http://backend.dkshomiti.com/allSliderImages')
+        fetch('http://localhost:5050/allSliderImages')
             .then(res => res.json())
             .then(data => setData(data))
     }, [ImgData])
@@ -44,7 +44,7 @@ const UpdateSlider = () => {
 
     //delete images data
     const deleteImage = (_id) => {
-        fetch(`http://backend.dkshomiti.com/ImageDelete/${_id}`, {
+        fetch(`http://localhost:5050/ImageDelete/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

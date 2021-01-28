@@ -15,7 +15,7 @@ const RegistrationForm = () => {
 
         const allFromData = { ...fData, ...uploadImgUrl };
 
-        fetch('http://backend.dkshomiti.com/AddRegistrationData', {
+        fetch('http://localhost:5050/AddRegistrationData', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(allFromData)

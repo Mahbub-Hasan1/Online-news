@@ -10,6 +10,8 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 import UpdateEventMarqueeHomePage from './UpdateEventMarqueeHomePage/UpdateEventMarqueeHomePage';
 import AboutUsUpdate from './AboutUsUpdate/AboutUsUpdate';
 import OurEvent from './OurEvent/OurEvent';
+import LatestUpdateDas from './LatestUpdateDas/LatestUpdateDas';
+import PhotoGalleryUpdate from './PhotoGalleryUpdate/PhotoGalleryUpdate';
 
 const Dashboard = () => {
     const { loggedInUser } = useContext(UserContext);
@@ -28,7 +30,7 @@ const Dashboard = () => {
     return (
         <>
 
-            {admin.length ?
+            {/* {admin.length ? */}
 
                 <>
                     <div className="container-sm">
@@ -53,6 +55,12 @@ const Dashboard = () => {
                                     <Tab><button className="des-site-btn">About us</button></Tab>
                                     {/* tab 6 */}
                                     <Tab><button className="des-site-btn">our event</button></Tab>
+                                    {/* tab 7 */}
+                                    <Tab><button className="des-site-btn">LatestUpdateDas</button></Tab>
+                                    {/* tab 8 */}
+                                    <Tab>
+                                        <button className="des-site-btn">Photo Gallery</button>
+                                    </Tab>
                                 </div>
 
                                 <div className="deshboard-mainContent">
@@ -76,11 +84,19 @@ const Dashboard = () => {
                                     </Panel>
                                     {/* tab 5 */}
                                     <Panel>
-                                        <AboutUsUpdate/>
+                                        <AboutUsUpdate />
                                     </Panel>
                                     {/* tab 6 */}
                                     <Panel>
-                                        <OurEvent/>
+                                        <OurEvent />
+                                    </Panel>
+                                    {/* tab 7 */}
+                                    <Panel>
+                                        <LatestUpdateDas />
+                                    </Panel>
+                                    {/* tab 8 */}
+                                    <Panel>
+                                        <PhotoGalleryUpdate />
                                     </Panel>
                                     <h5 className="text-center"> Welcome to dashboard page </h5>
                                 </div>
@@ -89,12 +105,12 @@ const Dashboard = () => {
 
                     </Tabs>
                 </>
-                :
+                {/* :
 
                 <>
                     <PageNotFound />
                 </>
-            }
+            } */}
 
         </>
     );

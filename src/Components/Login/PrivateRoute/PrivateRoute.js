@@ -14,7 +14,7 @@ const PrivateRoute = ({ children, ...rest }) => {
                 setAdmin(data)
             }
             )
-    }, [admin])
+    }, [])
 
     return (
         <Route

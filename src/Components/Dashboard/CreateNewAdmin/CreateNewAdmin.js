@@ -7,7 +7,7 @@ const CreateNewAdmin = () => {
 
     // post new admin
     const onSubmit = adminData => {
-        fetch('http://backend.dkshomiti.com/addNewAdmin', {
+        fetch('http://localhost:5050/addNewAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(adminData)

@@ -13,7 +13,7 @@ const SliderSection = () => {
     // const [ImgData, setData] = useState();
 
     // useEffect(() => {
-    //     fetch('http://backend.dkshomiti.com/allSliderImages')
+    //     fetch('http://localhost:5050/allSliderImages')
     //         .then(res => res.json())
     //         .then(data => setData(data))
     // }, [])
